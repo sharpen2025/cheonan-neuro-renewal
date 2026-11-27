@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>팍스신통의원 | 천안 불당동 신경과 · 통증 · 파킨슨병 · 근긴장이상증 (리뉴얼 시안 B)</title>
+<meta name="description" content="천안 불당동 신경과. 신경과 전문의 박종규 원장이 두통·목허리 통증, 손발 저림, 떨림, 파킨슨병, 근긴장이상증을 신경학적 진찰과 검사로 진료합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+.pk{
+  --cream:#F7F2EA; --paper:#FFFDF9; --sand:#EFE6D8; --sand2:#E7DCCB;
+  --olive:#5A4B2B; --ink:#2B261A; --gold:#C8A46E; --gold-d:#A8864F;
+  --muted:#7A6E5C; --line:#E3D8C6;
+  --serif:'Noto Serif KR', serif; --sans:'Pretendard', system-ui, sans-serif;
+}
+.pk,.pk *{box-sizing:border-box;margin:0;padding:0}
+.pk{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.pk img{display:block;max-width:100%}
+.pk a{color:inherit;text-decoration:none}
+.pk .wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.pk .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;color:var(--gold-d);font-weight:600;text-transform:uppercase}
+.pk .eyebrow .num{font-family:var(--serif);font-size:14px;letter-spacing:0;color:var(--olive);background:var(--sand);border-radius:99px;padding:2px 10px}
+.pk h2.title{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3.4vw,42px);line-height:1.35;color:var(--ink);margin:14px 0 16px;letter-spacing:-.01em}
+.pk .lead{color:var(--muted);font-size:17px;max-width:680px}
+.pk section{padding:120px 0}
+.pk .fine{font-size:13px;color:var(--muted);margin-top:22px}
+.pk .draft{position:fixed;left:16px;bottom:16px;z-index:60;background:rgba(43,38,26,.86);color:#F3E9D7;font-size:12px;padding:7px 12px;border-radius:99px}
+
+.pk /* header */
+header{position:sticky;top:0;z-index:50;background:rgba(247,242,234,.9);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+.pk header.scrolled{border-color:var(--line)}
+.pk .nav{display:flex;align-items:center;justify-content:space-between;height:78px;max-width:1360px}
+.pk .logo img{height:44px}
+.pk .menu{display:flex;gap:26px;font-size:15px;color:var(--olive);font-weight:500}
+.pk .menu a:hover{color:var(--ink)}
+.pk .nav-cta{display:flex;align-items:center;gap:14px}
+.pk .tel{font-family:var(--serif);font-weight:600;color:var(--olive);font-size:17px}
+.pk .btn{display:inline-flex;align-items:center;gap:8px;border-radius:99px;padding:13px 24px;font-weight:600;font-size:15px;transition:all .2s;cursor:pointer;border:0;font-family:var(--sans)}
+.pk .btn-dark{background:var(--olive);color:#FBF6EC}
+.pk .btn-dark:hover{background:var(--ink)}
+.pk .btn-line{border:1px solid var(--olive);color:var(--olive);background:transparent}
+.pk .btn-line:hover{background:var(--olive);color:#FBF6EC}
+.pk .burger{display:none}
+
+.pk /* quick side menu (기존 플로팅 메뉴) */
+.quick{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:45;display:flex;flex-direction:column;gap:6px;background:rgba(255,253,249,.92);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:22px;padding:10px 8px;box-shadow:0 18px 40px -24px rgba(60,45,20,.4)}
+.pk .quick a{font-size:12px;color:var(--olive);text-align:center;padding:8px 6px;border-radius:14px;line-height:1.3;width:62px}
+.pk .quick a:hover{background:var(--sand)}
+.pk .quick a b{display:block;font-family:var(--serif);font-size:15px;margin-bottom:2px}
+.pk .quick hr{border:0;border-top:1px solid var(--line);margin:2px 8px}
+
+.pk /* hero B */
+.bhero{padding:0 32px 28px}
+.pk .stage{position:relative;height:clamp(600px,calc(100vh - 110px),880px);border-radius:28px;overflow:hidden;background:#3a3124}
+.pk .slide{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease}
+.pk .slide.on{opacity:1}
+.pk .slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos);transform:scale(1.06);transition:transform 7s ease-out}
+.pk .slide.on img{transform:scale(1)}
+.pk .slide:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,38,26,.08) 0%,rgba(43,38,26,0) 30%,rgba(43,38,26,.45) 58%,rgba(43,38,26,.9) 100%)}
+.pk .slide.bright:after{background:linear-gradient(180deg,rgba(43,38,26,.22) 0%,rgba(43,38,26,.12) 30%,rgba(43,38,26,.55) 56%,rgba(43,38,26,.92) 100%)}
+.pk .cap{position:absolute;left:0;right:0;bottom:120px;z-index:3;text-align:center;color:#FBF6EC;padding:0 24px}
+.pk .cap .k{display:inline-block;font-size:13px;letter-spacing:.16em;color:#E9D3A8;font-weight:600;margin-bottom:14px}
+.pk .cap h1,.pk .cap .h1{font-family:var(--serif);font-weight:500;font-size:clamp(32px,4.2vw,60px);line-height:1.3;letter-spacing:-.01em;text-shadow:0 2px 24px rgba(0,0,0,.25)}
+.pk .cap p{margin-top:16px;font-size:17px;color:#EFE4D0}
+.pk .cap a.vlink{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:14px;color:#FBF6EC;border:1px solid rgba(251,246,236,.45);border-radius:99px;padding:8px 16px;backdrop-filter:blur(6px);background:rgba(251,246,236,.08)}
+.pk .cap a.vlink:hover{background:rgba(251,246,236,.2)}
+.pk .cap .item{display:none}
+.pk .cap .item.on{display:block;animation:capin .9s ease both}
+@keyframes capin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.pk .tabs{position:absolute;left:0;right:0;bottom:0;z-index:4;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(251,246,236,.22)}
+.pk .tabs button{background:none;border:0;color:rgba(251,246,236,.55);font:500 16px var(--sans);padding:26px 10px 28px;cursor:pointer;position:relative;border-right:1px solid rgba(251,246,236,.18)}
+.pk .tabs button:last-child{border-right:0}
+.pk .tabs button.on{color:#FBF6EC}
+.pk .tabs button i{position:absolute;left:0;top:-1px;height:2px;width:0;background:#E9D3A8}
+.pk .tabs button.on i{animation:prog 6.5s linear forwards}
+@keyframes prog{to{width:100%}}
+.pk .badge{position:absolute;right:42px;top:36px;z-index:4;width:126px;height:126px;color:#FBF6EC;border-radius:50%;background:rgba(43,38,26,.28);backdrop-filter:blur(6px)}
+.pk .badge svg{animation:spin 18s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pk .badge .arr{position:absolute;inset:0;display:grid;place-items:center;font-size:26px}
+.pk .src{position:absolute;left:28px;top:26px;z-index:4;font-size:12px;color:rgba(251,246,236,.85);background:rgba(43,38,26,.35);backdrop-filter:blur(6px);border-radius:99px;padding:6px 12px}
+
+.pk /* strip */
+.strip{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pk .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.pk .strip .cell{padding:26px 24px;border-right:1px solid var(--line)}
+.pk .strip .cell:last-child{border-right:0}
+.pk .strip small{display:block;font-size:12.5px;color:var(--gold-d);font-weight:600;letter-spacing:.08em;margin-bottom:6px}
+.pk .strip strong{font-size:16px;font-weight:600}
+.pk .strip span{display:block;font-size:14px;color:var(--muted)}
+
+.pk /* brand / principles (기존 메인 슬로건) */
+.brand{text-align:center;padding-bottom:100px}
+.pk .brand .en{font-family:var(--serif);font-size:15px;letter-spacing:.24em;color:var(--gold-d)}
+.pk .brand h2{font-family:var(--serif);font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.45;margin:18px 0 14px}
+.pk .brand h2 b{font-weight:700;color:var(--gold-d)}
+.pk .brand .lead{margin:0 auto}
+.pk .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px;text-align:left}
+.pk .pr{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:34px 32px}
+.pk .pr .w{font-family:var(--serif);font-size:30px;font-weight:600;color:var(--olive)}
+.pk .pr h3{font-size:18px;font-weight:600;margin:8px 0 14px}
+.pk .chips{display:flex;flex-wrap:wrap;gap:8px}
+.pk .chips span{background:var(--sand);border-radius:99px;padding:6px 13px;font-size:14px;color:var(--olive)}
+
+.pk /* doctor */
+.doctor{background:var(--paper)}
+.pk .doc-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+.pk .doc-photo{position:sticky;top:110px}
+.pk .doc-photo .main{border-radius:28px;overflow:hidden;aspect-ratio:4/5;background:#ECE7DF}
+.pk .doc-photo .main img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.pk .doc-photo .sig{margin-top:22px;font-family:var(--serif);display:flex;align-items:center;gap:18px}
+.pk .doc-photo .sig img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 15%;background:#eee}
+.pk .doc-photo .sig small{display:block;color:var(--gold-d);font-family:var(--sans);font-size:13px;letter-spacing:.06em;font-weight:600}
+.pk .doc-photo .sig strong{font-size:26px;font-weight:600}
+.pk blockquote{font-family:var(--serif);font-size:clamp(21px,2.2vw,27px);line-height:1.6;margin:22px 0 12px;font-weight:500}
+.pk blockquote:before{content:"“";display:block;font-size:60px;line-height:.6;color:var(--gold);margin-bottom:10px}
+.pk .cite{font-size:14px;color:var(--muted)}
+.pk .cite a{color:var(--gold-d);font-weight:600;border-bottom:1px solid rgba(168,134,79,.4)}
+.pk .cgroup{margin-top:40px}
+.pk .cgroup h4{display:inline-block;font-size:13px;letter-spacing:.1em;color:var(--olive);background:var(--sand);border-radius:99px;padding:4px 12px;margin-bottom:6px}
+.pk .career div{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.pk .career dt{font-family:var(--serif);font-weight:600;color:var(--olive);font-size:15px}
+.pk .career dd{font-size:15.5px}
+.pk .career dd span{display:block;color:var(--muted);font-size:14.5px}
+.pk .mission{margin-top:40px;background:var(--sand);border-radius:22px;padding:26px 30px;display:flex;gap:18px;align-items:center}
+.pk .mission .k{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--olive);white-space:nowrap}
+.pk .mission p{font-size:15px;color:var(--muted)}
+
+.pk /* symptoms */
+.symp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+.pk .symp{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px 26px;transition:all .25s;display:flex;flex-direction:column;gap:8px}
+.pk .symp:hover{transform:translateY(-4px);box-shadow:0 22px 40px -24px rgba(60,45,20,.35)}
+.pk .symp .ic{width:46px;height:46px;border-radius:14px;background:var(--sand);display:grid;place-items:center;color:var(--olive)}
+.pk .symp h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-top:6px}
+.pk .symp p{font-size:15px;color:var(--muted)}
+.pk .symp .go{margin-top:auto;font-size:14px;color:var(--gold-d);font-weight:600}
+
+.pk /* clinic overview cards (기존 4개 클리닉) */
+.ov{background:var(--sand)}
+.pk .ov .eyebrow .num{background:var(--paper)}
+.pk .ov-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+.pk .ovc{background:var(--paper);border-radius:22px;overflow:hidden;transition:transform .25s}
+.pk .ovc:hover{transform:translateY(-4px)}
+.pk .ovc .ph{aspect-ratio:4/3;overflow:hidden;position:relative}
+.pk .ovc .ph img{width:100%;height:100%;object-fit:cover}
+.pk .ovc .ph em{position:absolute;right:10px;bottom:10px;font-style:normal;font-size:11px;color:#fff;background:rgba(43,38,26,.55);border-radius:99px;padding:3px 9px}
+.pk .ovc .tx{padding:20px 22px 24px}
+.pk .ovc h3{font-family:var(--serif);font-size:19px;font-weight:600}
+.pk .ovc p{font-size:14.5px;color:var(--muted);margin-top:6px}
+.pk .tests{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px;align-items:center}
+.pk .tests b{font-family:var(--serif);font-weight:600;color:var(--olive);margin-right:8px}
+.pk .tests span{background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-size:14.5px}
+
+.pk /* detail clinic blocks */
+.alarm{text-align:center;margin-bottom:64px}
+.pk .alarm p{font-family:var(--serif);font-size:clamp(24px,2.8vw,36px);line-height:1.55;font-weight:500}
+.pk .alarm p b{color:var(--gold-d);font-weight:600}
+.pk .crow{display:grid;grid-template-columns:1fr 1fr;background:var(--paper);border-radius:28px;overflow:hidden;margin-top:28px;border:1px solid var(--line)}
+.pk .crow .ph{min-height:400px;position:relative}
+.pk .crow .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pk .crow .tx{padding:52px 54px}
+.pk .crow.rev .ph{order:2}
+.pk .tag{display:inline-block;font-size:12.5px;font-weight:600;color:var(--olive);background:var(--sand);border-radius:99px;padding:4px 12px;margin:0 6px 6px 0}
+.pk .crow h3{font-family:var(--serif);font-size:29px;font-weight:600;margin:12px 0 12px;line-height:1.4}
+.pk .crow p{color:var(--muted);font-size:16px}
+.pk .crow ul{list-style:none;margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
+.pk .crow li{font-size:15px;padding-left:18px;position:relative}
+.pk .crow li:before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.pk .dz{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pk .dz span{border:1px solid var(--line);border-radius:99px;padding:6px 13px;font-size:14px;background:var(--cream)}
+.pk .sub{margin-top:24px}
+.pk .sub h4{font-size:15px;font-weight:700;color:var(--olive);margin-bottom:6px}
+.pk .note{margin-top:18px;background:var(--cream);border-radius:16px;padding:14px 18px;font-size:14px;color:var(--olive)}
+.pk .rare{background:var(--paper)}
+.pk .rare-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.pk .rc{background:var(--cream);border-radius:22px;padding:30px 28px}
+.pk .rc h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-bottom:12px}
+.pk .rc ul{list-style:none;display:grid;gap:7px}
+.pk .rc li{font-size:15px;padding-left:16px;position:relative}
+.pk .rc li:before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.pk .rare-top{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.pk .rare-top .ph{border-radius:26px;overflow:hidden;aspect-ratio:16/10}
+.pk .rare-top .ph img{width:100%;height:100%;object-fit:cover;object-position:30% 30%}
+
+.pk /* wellbeing */
+.well-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.pk .well-ph{border-radius:50%;overflow:hidden;aspect-ratio:1/1;max-width:440px;background:#eee;position:relative}
+.pk .well-ph img{width:100%;height:100%;object-fit:cover}
+.pk .well-cap{font-size:12px;color:var(--muted);margin-top:10px;text-align:center;max-width:440px}
+.pk .well-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.pk .wl{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px 24px}
+.pk .wl b{font-family:var(--serif);font-size:19px;font-weight:600;display:block}
+.pk .wl span{font-size:14px;color:var(--muted)}
+
+.pk /* pain management system (기존 통증관리시스템) */
+.pms{position:relative;color:#FBF6EC;overflow:hidden}
+.pk .pms .bg{position:absolute;inset:0}
+.pk .pms .bg img{width:100%;height:100%;object-fit:cover}
+.pk .pms .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,38,26,.88) 0%,rgba(43,38,26,.7) 45%,rgba(43,38,26,.45) 100%)}
+.pk .pms .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.pk .pms .eyebrow{color:var(--gold)}
+.pk .pms .eyebrow .num{background:rgba(200,164,110,.2);color:#EAD9B8}
+.pk .pms h2.title{color:#FBF6EC}
+.pk .pms ul{list-style:none;margin-top:22px;display:grid;gap:10px}
+.pk .pms li{font-size:16.5px;color:#EFE4D0;padding-left:18px;position:relative}
+.pk .pms li:before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.pk .parts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pk .part{background:rgba(255,253,249,.1);backdrop-filter:blur(8px);border:1px solid rgba(255,253,249,.18);border-radius:22px;padding:22px 12px 18px;text-align:center}
+.pk .part img{width:84px;height:84px;margin:0 auto 10px;object-fit:contain}
+.pk .part b{font-family:var(--serif);font-size:18px;font-weight:600}
+
+.pk /* stories */
+.stories{background:var(--ink);color:#F3EBDD}
+.pk .stories h2.title{color:#FBF6EC}
+.pk .stories .lead{color:#C9BDA8}
+.pk .stories .eyebrow{color:var(--gold)}
+.pk .stories .eyebrow .num{background:rgba(200,164,110,.18);color:#EAD9B8}
+.pk .story-head{display:flex;justify-content:space-between;align-items:end;gap:40px}
+.pk .feature{display:grid;grid-template-columns:1.2fr 1fr;margin-top:56px;border-radius:28px;overflow:hidden;background:#3A3324}
+.pk .feature .ph{min-height:400px;position:relative}
+.pk .feature .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pk .feature .tx{padding:50px 48px;display:flex;flex-direction:column;justify-content:center}
+.pk .cat{font-size:12.5px;letter-spacing:.12em;color:var(--gold);font-weight:600}
+.pk .feature h3{font-family:var(--serif);font-size:28px;font-weight:600;line-height:1.45;margin:12px 0 18px;color:#FBF6EC}
+.pk .feature p{color:#CFC3AE;font-size:16px}
+.pk .feature .more{margin-top:24px;color:var(--gold);font-weight:600;font-size:15px}
+.pk .story-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:22px}
+.pk .st{background:#3A3324;border-radius:22px;overflow:hidden;transition:transform .25s}
+.pk .st:hover{transform:translateY(-4px)}
+.pk .st .ph{aspect-ratio:4/3;overflow:hidden}
+.pk .st .ph img{width:100%;height:100%;object-fit:cover}
+.pk .st .tx{padding:20px 22px 24px}
+.pk .st h4{font-family:var(--serif);font-size:17px;font-weight:600;line-height:1.5;margin-top:6px;color:#FBF6EC}
+.pk .st p{font-size:13.5px;color:#BDB09A;margin-top:8px;line-height:1.6}
+
+.pk /* video */
+.vid-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:36px;margin-top:52px;align-items:start}
+.pk .player{border-radius:24px;overflow:hidden;aspect-ratio:16/9;background:#000}
+.pk .player iframe{width:100%;height:100%;border:0}
+.pk .vlist{display:flex;flex-direction:column;gap:6px}
+.pk .vitem{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:center;padding:10px;border-radius:16px}
+.pk .vitem:hover{background:var(--paper)}
+.pk .vitem .th{border-radius:12px;overflow:hidden;aspect-ratio:16/9}
+.pk .vitem .th img{width:100%;height:100%;object-fit:cover}
+.pk .vitem b{display:block;font-size:15.5px;font-weight:600;line-height:1.45}
+.pk .vitem span{font-size:13px;color:var(--muted)}
+.pk .chan{margin-top:16px;display:inline-flex;font-weight:600;color:var(--gold-d);font-size:15px}
+
+.pk /* space */
+.space{background:var(--paper)}
+.pk .space-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:250px 250px;gap:16px;margin-top:48px}
+.pk .space-grid figure{border-radius:22px;overflow:hidden;position:relative}
+.pk .space-grid figure:first-child{grid-row:span 2}
+.pk .space-grid img{width:100%;height:100%;object-fit:cover}
+.pk .space-grid figcaption{position:absolute;left:14px;bottom:14px;background:rgba(255,253,249,.92);border-radius:99px;padding:6px 14px;font-size:13px;color:var(--olive);font-weight:600}
+
+.pk /* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+.pk .card{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:40px}
+.pk .card h3{font-family:var(--serif);font-size:24px;font-weight:600}
+.pk .card .slogan{font-size:15px;color:var(--gold-d);font-weight:600;margin-top:4px}
+.pk .hours{width:100%;border-collapse:collapse;margin-top:16px}
+.pk .hours td{padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+.pk .hours td:last-child{text-align:right;font-weight:600}
+.pk .hours tr.today td{color:var(--gold-d)}
+.pk .hours tr.closed td{color:#B0533C}
+.pk .addr{font-size:17px;font-weight:600;margin-top:16px}
+.pk .dir{margin-top:14px;display:grid;gap:10px}
+.pk .dir div{display:grid;grid-template-columns:62px 1fr;font-size:15px;color:var(--muted)}
+.pk .dir b{color:var(--olive);font-weight:600}
+.pk .bld{border-radius:20px;overflow:hidden;margin-top:22px;aspect-ratio:16/8}
+.pk .bld img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.pk .visit-ctas{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.pk .reviewbox{margin-top:28px;background:var(--sand);border-radius:22px;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.pk .reviewbox p{font-size:15px;color:var(--olive)}
+
+.pk /* online consult + fees */
+.consult{background:var(--sand)}
+.pk .consult .eyebrow .num{background:var(--paper)}
+.pk .cons-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;margin-top:44px;align-items:start}
+.pk .board{background:var(--paper);border-radius:24px;padding:30px 32px}
+.pk .board .row{display:grid;grid-template-columns:56px 1fr 100px;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px;align-items:center}
+.pk .board .row:last-of-type{border-bottom:0}
+.pk .board .row .n{font-size:12px;font-weight:600;color:var(--olive);background:var(--sand);border-radius:99px;text-align:center;padding:3px 0}
+.pk .board .row time{font-size:13px;color:var(--muted);text-align:right}
+.pk .channels{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.pk .channels a{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:15px;font-weight:600;font-size:15px;color:var(--olive)}
+.pk .channels a:hover{border-color:var(--olive)}
+.pk details.fees{background:var(--paper);border-radius:24px;padding:26px 30px}
+.pk details.fees summary{cursor:pointer;font-family:var(--serif);font-size:21px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.pk details.fees summary::-webkit-details-marker{display:none}
+.pk details.fees summary span{font-family:var(--sans);font-size:13px;color:var(--gold-d);font-weight:600}
+.pk .fee-table{width:100%;border-collapse:collapse;margin-top:18px;font-size:14px}
+.pk .fee-table th{text-align:left;font-weight:600;color:var(--olive);padding:10px 8px;border-bottom:1px solid var(--olive);font-size:13px}
+.pk .fee-table td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.pk .fee-table td.p{text-align:right;font-weight:600;white-space:nowrap}
+.pk .fee-table td small{display:block;color:var(--muted);font-size:12px}
+.pk .fee-intro{font-size:14px;color:var(--muted);margin-top:8px}
+
+.pk /* footer */
+footer{background:var(--ink);color:#BDB09A;padding:64px 0 90px;font-size:14px}
+.pk .f-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.pk .f-logo{font-family:var(--serif);font-size:22px;color:#FBF6EC;font-weight:600}
+.pk .f-logo small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.14em;color:var(--gold);font-weight:500;margin-top:4px}
+.pk .f-nav{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;color:#E7DCC7}
+.pk .sns{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.pk .sns a{border:1px solid #514832;border-radius:99px;padding:7px 15px;color:#E7DCC7;font-size:13px}
+.pk .sns a:hover{border-color:var(--gold);color:var(--gold)}
+.pk .f-info{line-height:2}
+.pk .mbar{display:none}
+
+@media (max-width:1180px){ .pk .menu{gap:18px;font-size:14px} .pk .tel{display:none} .pk .quick{display:none} }
+@media (max-width:960px){
+  .pk .wrap{padding:0 22px}
+  .pk section{padding:84px 0}
+  .pk .menu,.pk .tel{display:none}
+  .pk .nav{height:64px}
+  .pk .logo img{height:36px}
+  .pk .nav-cta .btn{display:none}
+  .pk .burger{display:block;width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--paper)}
+  .pk .bhero{padding:0 12px 16px}
+  .pk .stage{height:calc(100svh - 92px);min-height:560px;border-radius:22px}
+  .pk .cap{bottom:70px}
+  .pk .cap h1,.pk .cap .h1{font-size:30px}
+  .pk .cap p{font-size:14.5px}
+  .pk .slide img{height:60%;object-position:var(--mpos);-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent);mask-image:linear-gradient(180deg,#000 72%,transparent)}
+  .pk .slide:after,.pk .slide.bright:after{background:linear-gradient(180deg,rgba(43,38,26,.1) 0%,rgba(43,38,26,0) 25%)}
+  .pk .tabs{border-top:0;left:24px;right:24px;bottom:22px;gap:6px}
+  .pk .tabs button{font-size:0;padding:0;border-right:0;background:rgba(251,246,236,.25);height:3px;border-radius:2px;overflow:hidden}
+  .pk .tabs button i{top:0;height:3px}
+  .pk .badge{width:86px;height:86px;right:16px;top:16px}
+  .pk .src{left:14px;top:16px;font-size:11px}
+  .pk .strip .wrap{grid-template-columns:1fr 1fr;padding:0}
+  .pk .strip .cell:nth-child(2){border-right:0}
+  .pk .strip .cell:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .pk .principles,.pk .rare-grid{grid-template-columns:1fr;gap:12px}
+  .pk .brand h2{font-size:25px}
+  .pk .pr{padding:24px 22px}
+  .pk .pr .w{font-size:25px}
+  .pk .doc-grid,.pk .vid-grid,.pk .visit-grid,.pk .feature,.pk .crow,.pk .rare-top,.pk .well-grid,.pk .pms .wrap,.pk .cons-grid{grid-template-columns:1fr}
+  .pk .doc-grid{gap:36px}
+  .pk .doc-photo{position:static}
+  .pk .career div{grid-template-columns:96px 1fr;gap:10px;padding:11px 0}
+  .pk .career dd{font-size:14.5px}
+  .pk .mission{flex-direction:column;align-items:flex-start}
+  .pk .symp-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .pk .symp{padding:20px 18px}
+  .pk .symp h3{font-size:18px}
+  .pk .symp p{font-size:14px}
+  .pk .ov-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .pk .ovc .tx{padding:14px 16px 18px}
+  .pk .ovc h3{font-size:16px}
+  .pk .ovc p{font-size:13px}
+  .pk .crow .ph{min-height:240px}
+  .pk .crow.rev .ph{order:0}
+  .pk .crow .tx{padding:30px 24px}
+  .pk .crow h3{font-size:24px}
+  .pk .crow ul{grid-template-columns:1fr}
+  .pk .well-ph{max-width:300px;margin:0 auto}
+  .pk .well-cap{margin:10px auto 0}
+  .pk .pms .wrap{gap:36px}
+  .pk .parts{gap:10px}
+  .pk .part img{width:60px;height:60px}
+  .pk .story-head{flex-direction:column;align-items:flex-start;gap:10px}
+  .pk .feature .ph{min-height:240px}
+  .pk .feature .tx{padding:30px 24px}
+  .pk .story-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .pk .st .tx{padding:14px 16px 18px}
+  .pk .st h4{font-size:15px}
+  .pk .st p{display:none}
+  .pk .vitem{grid-template-columns:120px 1fr}
+  .pk .space-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 160px 160px}
+  .pk .space-grid figure:first-child{grid-column:span 2;grid-row:auto}
+  .pk .card{padding:28px 22px}
+  .pk .reviewbox{flex-direction:column;align-items:flex-start}
+  .pk .board{padding:22px 20px}
+  .pk .board .row{grid-template-columns:48px 1fr;}
+  .pk .board .row time{display:none}
+  .pk details.fees{padding:22px 18px}
+  .pk .fee-table th:nth-child(1),.pk .fee-table td:nth-child(1){display:none}
+  .pk .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(247,242,234,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .pk .mbar a{justify-content:center;padding:14px 10px}
+  .pk .draft{bottom:84px;font-size:11px;padding:5px 10px}
+}
+
+.pk section{scroll-margin-top:84px}
+
+.pk .mnav{display:none}
+@media (max-width:960px){
+  .pk.open .mnav{display:block;position:fixed;inset:64px 0 0 0;z-index:58;background:rgba(43,38,26,.35)}
+  .pk .mnav-in{background:var(--cream);padding:12px 22px 26px;display:flex;flex-direction:column;border-bottom:1px solid var(--line)}
+  .pk .mnav-in a{padding:14px 2px;border-bottom:1px solid var(--line);font-size:16px;color:var(--olive);font-weight:500}
+  .pk .mnav-in a.btn{margin-top:16px;border:0;justify-content:center;color:#FBF6EC}
+}
+</style>
+</head>
+<body style="margin:0;background:#F7F2EA">
+<div class="pk" id="pk">
+
+<div class="draft">제안용 시안 · 실제 병원 홈페이지 아님</div>
+
+<header id="hd">
+  <div class="wrap nav">
+    <a class="logo" href="#top"><img src="img/logo.png" alt="팍스신통의원"></a>
+    <nav class="menu">
+      <a href="#doctor">의료진 소개</a>
+      <a href="#pain">통증 클리닉</a>
+      <a href="#rare">희귀난치질환 클리닉</a>
+      <a href="#well">웰빙 클리닉</a>
+      <a href="#pms">통증관리시스템</a>
+      <a href="#visit">진료시간·오시는 길</a>
+      <a href="#consult">온라인상담</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="tel" href="tel:0414173700">041-417-3700</a>
+      <a class="btn btn-dark" href="tel:0414173700">진료 예약</a>
+      <button class="burger" aria-label="메뉴 열기" onclick="document.getElementById('pk').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- 모바일 메뉴 (아임웹에서는 아임웹 헤더의 모바일 메뉴로 대체) -->
+<nav class="mnav" onclick="if(event.target.tagName==='A'||event.target===this)document.getElementById('pk').classList.remove('open')">
+  <div class="mnav-in">
+    <a href="#doctor">의료진 소개</a><a href="#pain">통증 클리닉</a><a href="#rare">희귀난치질환 클리닉</a><a href="#well">웰빙 클리닉</a><a href="#pms">통증관리시스템</a><a href="#visit">진료시간·오시는 길</a><a href="#consult">온라인상담</a>
+    <a class="btn btn-dark" href="tel:0414173700">041-417-3700 전화 예약</a>
+  </div>
+</nav>
+
+<!-- 기존 플로팅 메뉴: 블로그 · 유튜브 · 인스타그램 · 스레드 · 카카오톡 · 네이버예약 · 온라인상담 -->
+<nav class="quick" aria-label="바로가기">
+  <a href="https://blog.naver.com/parksnclinic" target="_blank"><b>B</b>블로그</a>
+  <a href="https://www.youtube.com/@%ED%8C%8D%EC%8A%A4%EC%8B%A0%ED%86%B5%EC%9D%98%EC%9B%90" target="_blank"><b>▶</b>유튜브</a>
+  <a href="https://www.instagram.com/parks_neuropain_clinic" target="_blank"><b>◎</b>인스타그램</a>
+  <a href="https://www.threads.com/@parks_neuropain_clinic" target="_blank"><b>@</b>스레드</a>
+  <hr>
+  <a href="#consult" data-todo="카카오톡 채널 URL"><b>톡</b>카카오톡</a>
+  <a href="#consult" data-todo="네이버 예약 URL"><b>N</b>네이버예약</a>
+  <a href="#consult"><b>✎</b>온라인상담</a>
+</nav>
+
+<!-- HERO -->
+<section class="bhero" id="top">
+  <div class="stage" id="stage">
+    <div class="slide on"><img src="img/hero_isuaczEFvjk_300.jpg" alt="설명하는 박종규 원장" style="--pos:50% 20%;--mpos:50% 30%"></div>
+    <div class="slide bright"><img src="img/hero_5i93MqQ53OY_66.jpg" alt="근긴장이상증을 강의하는 박종규 원장" style="--pos:18% 30%;--mpos:0% 30%"></div>
+    <div class="slide bright"><img src="img/hero_hHX27z5RymY_690.jpg" alt="떨림 진찰 방법을 시연하는 박종규 원장" style="--pos:72% 30%;--mpos:80% 30%"></div>
+    <span class="src">팍스TV 영상 중에서</span>
+    <a class="badge" href="#brand" aria-label="아래로">
+      <svg viewBox="0 0 120 120" width="100%" height="100%"><defs><path id="c" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text font-family="Noto Serif KR, serif" font-size="10.5" letter-spacing="2.6" fill="currentColor"><textPath href="#c">PARK'S NEURO PAIN CLINIC · SCROLL · </textPath></text></svg>
+      <span class="arr">↓</span>
+    </a>
+    <div class="cap">
+      <div class="item on">
+        <span class="k">PARK'S NEURO PAIN CLINIC · 前 순천향대 교수 박종규 개원</span>
+        <h1>대학병원에서 하던 진료를,<br>천안에서 이어갑니다</h1>
+        <p>전 순천향대학교 의과대학 신경과 교수 · 삼성서울병원 이상운동질환 임상강사</p>
+        <a class="vlink" href="https://www.youtube.com/watch?v=isuaczEFvjk&t=296s" target="_blank">▶ 이 장면 영상으로 보기</a>
+      </div>
+      <div class="item">
+        <span class="k">이상운동질환 · 희귀난치질환 클리닉</span>
+        <p class="h1">내 몸의 움직임을<br>다시 내 것으로</p>
+        <p>파킨슨병 · 근긴장이상증 · 눈과 얼굴 떨림을 진료합니다</p>
+        <a class="vlink" href="https://www.youtube.com/watch?v=5i93MqQ53OY&t=60s" target="_blank">▶ 근긴장이상증 강의 보기</a>
+      </div>
+      <div class="item">
+        <span class="k">순수하게 · 과학적으로 정밀하게</span>
+        <p class="h1">손끝의 떨림까지,<br>직접 보고 확인합니다</p>
+        <p>진찰과 신경전도 · 근전도 · 뇌파 · 초음파 검사로 원인부터 찾습니다</p>
+        <a class="vlink" href="https://www.youtube.com/watch?v=hHX27z5RymY&t=684s" target="_blank">▶ 진찰 과정 영상으로 보기</a>
+      </div>
+    </div>
+    <div class="tabs" id="tabs">
+      <button class="on"><i></i>신경과 전문의 박종규</button>
+      <button><i></i>이상운동질환 클리닉</button>
+      <button><i></i>신경학적 진찰</button>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="cell"><small>평일 (월–금)</small><strong>09:00 – 19:00</strong><span>점심 13:00 – 14:00</span></div>
+    <div class="cell"><small>토요일</small><strong>09:00 – 14:30</strong><span>일요일·공휴일 휴진</span></div>
+    <div class="cell"><small>전화</small><strong>041-417-3700</strong><span>예약·문의</span></div>
+    <div class="cell"><small>위치</small><strong>천안시청 정면 율곡스퀘어 4층</strong><span>건물 주차 가능</span></div>
+  </div>
+</div>
+
+<!-- BRAND / 진료 원칙 (기존 메인 슬로건 3개) -->
+<section class="brand" id="brand">
+  <div class="wrap">
+    <span class="en">PARK'S NEURO PAIN CLINIC</span>
+    <h2><b>신</b>경과 <b>통</b>증을 함께 보는 곳,<br>팍스신통의원입니다</h2>
+    <p class="lead">통증을 치료해서 신경을 치료합니다. 원장의 이름 ‘Park’과 ‘팍’을 함께 담아 지은 이름입니다.</p>
+    <div class="principles">
+      <div class="pr"><span class="w">순수하게</span><h3>과학적으로 정밀하게</h3><div class="chips"><span>신경전도검사</span><span>근전도검사</span><span>뇌파검사</span><span>초음파</span></div></div>
+      <div class="pr"><span class="w">안전하게</span><h3>회복과 재발 방지를 목표로</h3><div class="chips"><span>운동</span><span>식이</span><span>수면</span><span>생활습관</span></div></div>
+      <div class="pr"><span class="w">치료하는</span><h3>치료 중심 의원</h3><div class="chips"><span>주사</span><span>도수</span><span>약물</span><span>TMS(경두개 자기 자극술)</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR (기존 의료진소개 전체) -->
+<section class="doctor" id="doctor">
+  <div class="wrap doc-grid">
+    <div class="doc-photo">
+      <div class="main"><img src="img/s9.jpeg" alt="박종규 원장"></div>
+      <div class="sig"><img src="img/s2.png" alt=""><div><small>대표원장 · 신경과 전문의</small><strong>박 종 규</strong></div></div>
+    </div>
+    <div>
+      <span class="eyebrow"><span class="num">01</span>의료진 소개</span>
+      <blockquote>통증이 지속되면 이것은 증상이 아니라 병이다. 빨리 꺼 버리기보다, 왜 울리는지 함께 찾고 싶다.</blockquote>
+      <p class="cite">원장 칼럼 「통증에 대한 신경과 의사의 생각」에서 · <a href="https://blog.naver.com/parksnclinic/223839101806" target="_blank">전문 읽기</a></p>
+
+      <div class="cgroup"><h4>현재 · 주요 경력</h4>
+      <dl class="career">
+        <div><dt>현재</dt><dd>팍스신통의원 대표원장 · 신경과 전문의</dd></div>
+        <div><dt>2017 – 2025</dt><dd>순천향대학교 의과대학 신경과 교수</dd></div>
+        <div><dt>2017</dt><dd>순천향대학 구미병원<span>파킨슨병 및 이상운동질환 클리닉 개설</span></dd></div>
+        <div><dt>2019</dt><dd>순천향대학 천안병원<span>파킨슨병 및 이상운동질환 클리닉 개설</span></dd></div>
+        <div><dt>2022 – 2025</dt><dd>순천향의과대학 두통 통합강의 책임교수</dd></div>
+        <div><dt>2022 – 2023</dt><dd>대한신경과학회 전문의 국가고시 출제위원</dd></div>
+        <div><dt>2014 – 2017</dt><dd>삼성서울병원 신경과 이상운동질환 임상강사<span>삼성서울병원 근긴장이상증 보톡스 클리닉 · 뇌신경센터 뇌심부자극술</span></dd></div>
+      </dl></div>
+
+      <div class="cgroup"><h4>학회 · 대외 활동</h4>
+      <dl class="career">
+        <div><dt>2020 – 현재</dt><dd>대한파킨슨병 및 이상운동질환 학회 학술위원</dd></div>
+        <div><dt>2024 – 현재</dt><dd>International Conference of Korean Movement Disorder Society 조직위원</dd></div>
+        <div><dt>2024</dt><dd>Korea-India Traditional Medicine Collaboration<span>한국-인도 전통의학 협의체 임원</span></dd></div>
+      </dl></div>
+
+      <div class="cgroup"><h4>국제 교육 · 국제 학술대회</h4>
+      <dl class="career">
+        <div><dt>2015</dt><dd>하버드 의과대학 이상운동질환 전문과 과정 수료</dd></div>
+        <div><dt>2016</dt><dd>국제 파킨슨 및 이상운동질환 Aspen Course 수료</dd></div>
+        <div><dt>2018</dt><dd>이탈리아 토리노 알츠하이머 / 파킨슨병 심포지엄<span>파킨슨병 치료전략 세션 좌장</span></dd></div>
+        <div><dt>2018</dt><dd>국제 파킨슨 및 이상운동질환 학회 MDS-AOS SYNERGIES Seoul 좌장</dd></div>
+      </dl></div>
+
+      <div class="mission"><span class="k">팍스의 약속</span><p>치료가 끝난 뒤에도 스스로 몸을 돌볼 수 있도록, 스트레칭과 자세, 생활 습관까지 함께 알려 드립니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SYMPTOMS -->
+<section id="symptom">
+  <div class="wrap">
+    <span class="eyebrow"><span class="num">02</span>증상별 안내</span>
+    <h2 class="title">어디가, 어떻게 불편하신가요?</h2>
+    <p class="lead">병명을 몰라도 괜찮습니다. 지금 느끼는 증상에서 시작하세요.</p>
+    <div class="symp-grid">
+      <a class="symp" href="#pain"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="10" r="6"/><path d="M9 21h6M12 16v5"/></svg></span><h3>두통 · 어지럼</h3><p>반복되는 두통, 편두통, 자율신경실조증</p><span class="go">통증 클리닉 →</span></a>
+      <a class="symp" href="#pain"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M8 6h8M7 10h10M8 14h8M9 18h6"/></svg></span><h3>목 · 허리 · 어깨</h3><p>추간판탈출증, 어깨충돌증후군, 오십견</p><span class="go">통증 클리닉 →</span></a>
+      <a class="symp" href="#pain"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 21V11a2 2 0 0 1 4 0v-6a2 2 0 0 1 4 0v8"/><path d="M15 9a2 2 0 0 1 4 0v6a6 6 0 0 1-6 6h-2"/></svg></span><h3>손발 저림 · 통증</h3><p>손목터널증후군, 족저근막염</p><span class="go">통증 클리닉 →</span></a>
+      <a class="symp" href="#rare"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12c2-4 4 4 6 0s4 4 6 0 4 4 6 0"/></svg></span><h3>떨림 · 느려짐</h3><p>손 떨림, 걸음이 느려짐, 파킨슨병이 걱정될 때</p><span class="go">희귀난치질환 클리닉 →</span></a>
+      <a class="symp" href="#rare"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M8.5 10.5h.01M15.5 10.5h.01M9 15c1.8 1 4.2 1 6 0"/></svg></span><h3>눈 · 얼굴 떨림</h3><p>눈 떨림, 안면 연축, 안면 경련</p><span class="go">희귀난치질환 클리닉 →</span></a>
+      <a class="symp" href="#rare"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="6" r="3"/><path d="M12 9c-2 3-1 6 0 12M9 13l3-1 3 1"/></svg></span><h3>고개 · 손이 틀어짐</h3><p>사경증, 고개 떨림, 손 꼬임 같은 근긴장이상증</p><span class="go">희귀난치질환 클리닉 →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CLINIC OVERVIEW (기존 4개 클리닉 카드 + 검사) -->
+<section class="ov" id="clinic">
+  <div class="wrap">
+    <span class="eyebrow"><span class="num">03</span>진료 안내</span>
+    <h2 class="title">대학병원식 심층진료를 수행합니다</h2>
+    <p class="lead">진찰과 검사로 원인을 찾고, 원인에 맞춰 치료합니다.</p>
+    <div class="ov-grid">
+      <a class="ovc" href="#pain"><div class="ph"><img src="img/s3.jpg" alt=""><em>인테리어 이미지</em></div><div class="tx"><h3>통증 클리닉</h3><p>신경학적 진찰을 통한 정교한 치료</p></div></a>
+      <a class="ovc" href="#rare"><div class="ph"><img src="img/s4.jpg" alt=""><em>인테리어 이미지</em></div><div class="tx"><h3>TMS(경두개 자기 자극술) 클리닉</h3><p>난치성 신경질환에 쓰는 자기 자극 치료</p></div></a>
+      <a class="ovc" href="#rare"><div class="ph"><img src="img/s5.jpg" alt=""><em>인테리어 이미지</em></div><div class="tx"><h3>근긴장이상증 보톡스 클리닉</h3><p>이상운동질환 진료 경험을 바탕으로 한 치료</p></div></a>
+      <a class="ovc" href="#manual"><div class="ph"><img src="img/s6.jpg" alt=""><em>인테리어 이미지</em></div><div class="tx"><h3>도수 클리닉</h3><p>전문의 원장이 직접 하는 교정 치료</p></div></a>
+    </div>
+    <div class="tests"><b>원내 검사</b><span>신경전도검사</span><span>근전도검사</span><span>뇌파검사</span><span>초음파</span><span>자율신경계 이상검사</span><span>엑스선</span><span>골밀도검사</span></div>
+  </div>
+</section>
+
+<!-- PAIN CLINIC (기존 통증 클리닉 전체) -->
+<section id="pain">
+  <div class="wrap">
+    <div class="alarm">
+      <span class="eyebrow"><span class="num">04</span>통증 클리닉</span>
+      <p style="margin-top:18px">‘<b>통증</b>’은 몸에 울리는 알람 신호입니다.<br>‘<b>통증</b>’을 해결하면 ‘병’을 막을 수 있습니다.</p>
+    </div>
+
+    <div class="crow">
+      <div class="ph"><img src="img/s8.jpg" alt="목과 뇌 신경 이미지"></div>
+      <div class="tx">
+        <span class="tag">통증 클리닉</span>
+        <h3>신경학적 진찰과 초음파·근전도로<br>정교하게 치료합니다</h3>
+        <div class="dz"><span>두통</span><span>추간판탈출증</span><span>어깨충돌증후군</span><span>오십견</span><span>손목터널증후군</span><span>족저근막염</span><span>자율신경실조증</span></div>
+        <ul><li>초음파 정밀 주사치료</li><li>자율신경 주사치료</li><li>수면 유도요법</li><li>근막이완술</li><li>DNA 재생주사</li></ul>
+        <p class="fine">주사 치료 후 주사 부위 통증, 멍, 일시적 뻐근함이 생길 수 있으며 치료 반응은 사람마다 다릅니다.</p>
+      </div>
+    </div>
+
+    <div class="crow rev" id="manual">
+      <div class="ph"><img src="img/s7.jpg" alt="원장이 직접 진행하는 도수치료"></div>
+      <div class="tx">
+        <span class="tag">도수 클리닉</span>
+        <h3>전문의 원장이 직접<br>도수치료를 진행합니다</h3>
+        <p>미국 카이로프랙틱 도수치료 협회와 정식 MOU를 맺고 최신 도수치료 기법을 적용해, 통증 부담을 줄인 도수치료를 합니다.</p>
+        <div class="sub"><h4>도수치료란</h4><p>의료진과 실시간으로 교감하며 가장 안전한 방법으로 증상을 개선합니다. 높은 치료 효과를 위해 충분한 사전 준비와 소통을 한 뒤, 전문적인 교육을 받은 의사와 물리치료사가 시행합니다.</p></div>
+        <div class="note"><b>금기증</b> · 척추 골절 환자, 척추암 환자는 도수치료를 받을 수 없습니다.</div>
+        <p class="fine">치료 후 일시적인 근육통이나 뻐근함이 있을 수 있으며 치료 횟수와 반응은 개인에 따라 다릅니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN MANAGEMENT SYSTEM (기존 통증관리시스템) -->
+<section class="pms" id="pms">
+  <div class="bg"><img src="img/s17.jpg" alt=""></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><span class="num">05</span>통증관리시스템</span>
+      <h2 class="title">통증의 원인을 잡아<br>재발을 줄이는 데 집중합니다</h2>
+      <ul>
+        <li>이상운동질환 대학교수 출신 원장이 직접 설계하는 치료 프로그램</li>
+        <li>꾸준한 교정과 정기적인 치료로, 아프기 전의 일상 움직임을 되찾도록 돕습니다</li>
+      </ul>
+    </div>
+    <div class="parts">
+      <a class="part" href="#pain"><img src="img/icon_1.png" alt=""><b>두통</b></a>
+      <a class="part" href="#pain"><img src="img/icon_4.png" alt=""><b>목</b></a>
+      <a class="part" href="#pain"><img src="img/icon_2.png" alt=""><b>허리</b></a>
+      <a class="part" href="#pain"><img src="img/icon_5.png" alt=""><b>어깨</b></a>
+      <a class="part" href="#pain"><img src="img/icon_3.png" alt=""><b>무릎</b></a>
+      <a class="part" href="#pain"><img src="img/icon_6.png" alt=""><b>발</b></a>
+    </div>
+  </div>
+</section>
+
+<!-- RARE (기존 희귀난치질환 클리닉 전체) -->
+<section class="rare" id="rare">
+  <div class="wrap">
+    <div class="rare-top">
+      <div>
+        <span class="eyebrow"><span class="num">06</span>희귀난치질환 클리닉</span>
+        <h2 class="title">파킨슨병부터 근긴장이상증까지,<br>오래 함께 갑니다</h2>
+        <p class="lead">대학병원에서 파킨슨병·이상운동질환 클리닉을 열고 진료해 온 경험으로, 약 조절부터 생활 관리, 행정 절차까지 함께합니다.</p>
+      </div>
+      <div class="ph"><img src="img/b3.jpg" alt="환자에게 설명하는 박종규 원장"></div>
+    </div>
+    <div class="rare-grid">
+      <div class="rc"><h3>신경퇴행성 뇌질환</h3><ul><li>파킨슨병</li><li>소뇌실조증</li><li>다계통위축증</li></ul></div>
+      <div class="rc"><h3>근긴장이상증</h3><ul><li>안면 연축 · 안면 경련</li><li>눈 떨림 · 고개 떨림</li><li>사경증 · 손 꼬임 · 손 떨림</li><li>보톡스 · TMS 치료</li></ul></div>
+      <div class="rc"><h3>등록 · 진단 업무</h3><ul><li>각종 희귀난치질환 산정특례 등록 및 갱신</li><li>장애 진단</li></ul></div>
+    </div>
+    <p class="fine">보톡스 주사 후 일시적 근력 저하, 주사 부위 통증이 생길 수 있으며 TMS를 포함한 치료의 효과와 지속 기간은 개인에 따라 다릅니다.</p>
+  </div>
+</section>
+
+<!-- WELLBEING (기존 웰빙 클리닉) -->
+<section id="well">
+  <div class="wrap well-grid">
+    <div><div class="well-ph"><img src="img/s10.jpg" alt="웰빙 클리닉"></div><p class="well-cap">모델 사진</p></div>
+    <div>
+      <span class="eyebrow"><span class="num">07</span>웰빙 클리닉</span>
+      <h2 class="title">아프기 전에, 몸을 돌보는 진료</h2>
+      <p class="lead">공부하는 학생부터 운동하는 분까지, 생활에 맞춰 관리합니다.</p>
+      <div class="well-list">
+        <div class="wl"><b>수험생 관리</b><span>오래 앉아 공부하는 학생의 두통·목·허리 관리</span></div>
+        <div class="wl"><b>스포츠 의학</b><span>운동하는 분의 통증과 부상 관리</span></div>
+        <div class="wl"><b>성장기 도수치료</b><span>성장기 자세와 체형 관리</span></div>
+        <div class="wl"><b>체중감량</b><span>운동·식이·수면을 함께 보는 체중 관리</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORIES -->
+<section class="stories" id="story">
+  <div class="wrap">
+    <div class="story-head">
+      <div><span class="eyebrow"><span class="num">08</span>팍스 이야기</span><h2 class="title">진료실 밖의 박종규</h2></div>
+      <p class="lead">커피를 내리고, 해금을 켜고, 연구를 이어 갑니다. 원장이 직접 쓰는 블로그에서 골랐습니다.</p>
+    </div>
+    <a class="feature" href="https://blog.naver.com/parksnclinic/223815702387" target="_blank">
+      <div class="ph"><img src="img/s11.jpeg" alt="팍스신통의원 입구"></div>
+      <div class="tx"><span class="cat">개원 이야기</span><h3>통증을 치료해서<br>신경을 치료하다</h3><p>“병원의 첫인상부터 환자들에게 꿈과 희망을 주고 싶었다.” 대학병원 진료실을 떠나 천안에 팍스신통의원을 열기까지, 그리고 ‘Park’과 ‘팍’을 함께 담은 이름 이야기.</p><span class="more">블로그에서 읽기 →</span></div>
+    </a>
+    <div class="story-grid">
+      <a class="st" href="https://blog.naver.com/parksnclinic/223887268238" target="_blank"><div class="ph"><img src="img/b5.jpg" alt=""></div><div class="tx"><span class="cat">커피 : 문학</span><h4>커피 한 잔으로 맺은 의사와 환자의 인연</h4><p>진료 전 늘 커피부터 내립니다. 파킨슨병 환자들과 함께한 커피 시음회 이야기.</p></div></a>
+      <a class="st" href="https://blog.naver.com/parksnclinic/224402891567" target="_blank"><div class="ph"><img src="img/b7.jpg" alt="" style="object-position:30% 50%"></div><div class="tx"><span class="cat">해금 : 치유</span><h4>월요일 저녁, 대기실의 해금 소리</h4><p>천안에서 시작해 7년째. 떨림해금앙상블과 함께하는 시간.</p></div></a>
+      <a class="st" href="https://blog.naver.com/parksnclinic/223818249528" target="_blank"><div class="ph"><img src="img/b8.jpg" alt=""></div><div class="tx"><span class="cat">연구</span><h4>개원 첫날, 연구소를 세우다</h4><p>거동이 불편한 환자도 일찍 발견할 수 있도록. 팍스신통의원 AI연구소.</p></div></a>
+      <a class="st" href="https://blog.naver.com/parksnclinic/223835165202" target="_blank"><div class="ph"><img src="img/b4.jpg" alt=""></div><div class="tx"><span class="cat">통증 : 희망</span><h4>손으로 느낀 진짜 아픔, 도수치료를 시작한 이유</h4><p>신경과 의사가 직접 손으로 치료하게 된 계기.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+  <div class="wrap">
+    <span class="eyebrow"><span class="num">09</span>팍스TV</span>
+    <h2 class="title">진료실에서 다 못 한 설명,<br>영상으로 천천히 들려 드립니다.</h2>
+    <div class="vid-grid">
+      <div class="player"><iframe src="https://www.youtube.com/embed/txkKQYT2Mpk" title="팍스신통의원 소개" allowfullscreen loading="lazy"></iframe></div>
+      <div class="vlist">
+        <a class="vitem" href="https://www.youtube.com/watch?v=5i93MqQ53OY" target="_blank"><div class="th"><img src="img/yt_5i93MqQ53OY.jpg" alt=""></div><div><b>근긴장이상증, 원인과 증상 그리고 치료</b><span>근긴장이상증</span></div></a>
+        <a class="vitem" href="https://www.youtube.com/watch?v=i_L0BfLZ4t0" target="_blank"><div class="th"><img src="img/yt_i_L0BfLZ4t0.jpg" alt=""></div><div><b>눈이 자꾸 감기고 얼굴이 마음대로 움직인다면</b><span>안면 근긴장이상증</span></div></a>
+        <a class="vitem" href="https://www.youtube.com/watch?v=h-K41ZJXDwo" target="_blank"><div class="th"><img src="img/yt_h-K41ZJXDwo.jpg" alt=""></div><div><b>파킨슨병은 약을 어떻게 먹어야 하나요?</b><span>파킨슨병 · 약물 치료</span></div></a>
+        <a class="vitem" href="https://www.youtube.com/watch?v=sO9UON-qHGo" target="_blank"><div class="th"><img src="img/yt_sO9UON-qHGo.jpg" alt=""></div><div><b>파킨슨병 진행 정도, 의사는 어떻게 알까?</b><span>파킨슨병 · 검사</span></div></a>
+        <a class="chan" href="https://www.youtube.com/@%ED%8C%8D%EC%8A%A4%EC%8B%A0%ED%86%B5%EC%9D%98%EC%9B%90/videos" target="_blank">팍스TV 채널에서 영상 전체 보기 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPACE (기존 진료시간 슬라이드 인테리어 이미지 포함) -->
+<section class="space">
+  <div class="wrap">
+    <span class="eyebrow"><span class="num">10</span>공간</span>
+    <h2 class="title">편하게 기다리고, 충분히 이야기 나누는 곳</h2>
+    <div class="space-grid">
+      <figure><img src="img/s12.jpeg" alt="대기실"><figcaption>대기실</figcaption></figure>
+      <figure><img src="img/s11.jpeg" alt="입구"><figcaption>입구</figcaption></figure>
+      <figure><img src="img/s14.jpg" alt="진료실"><figcaption>진료실 (인테리어 이미지)</figcaption></figure>
+      <figure><img src="img/s16.jpg" alt="라운지"><figcaption>라운지 (인테리어 이미지)</figcaption></figure>
+      <figure><img src="img/s15.jpg" alt="치료실"><figcaption>치료실 (인테리어 이미지)</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT (기존 진료시간 · 오시는길) -->
+<section id="visit">
+  <div class="wrap">
+    <span class="eyebrow"><span class="num">11</span>진료시간 · 오시는 길</span>
+    <h2 class="title">천안시청 정면, 율곡스퀘어 4층</h2>
+    <div class="visit-grid">
+      <div class="card">
+        <h3>진료시간</h3>
+        <p class="slogan">대학병원식 심층진료를 수행합니다.</p>
+        <table class="hours" id="hours">
+          <tr data-d="1"><td>월요일</td><td>09:00 – 19:00</td></tr>
+          <tr data-d="2"><td>화요일</td><td>09:00 – 19:00</td></tr>
+          <tr data-d="3"><td>수요일</td><td>09:00 – 19:00</td></tr>
+          <tr data-d="4"><td>목요일</td><td>09:00 – 19:00</td></tr>
+          <tr data-d="5"><td>금요일</td><td>09:00 – 19:00</td></tr>
+          <tr data-d="6"><td>토요일</td><td>09:00 – 14:30</td></tr>
+          <tr data-d="0" class="closed"><td>일요일 및 공휴일</td><td>휴진</td></tr>
+        </table>
+        <p class="fine">점심시간 (월요일–금요일) 13:00 – 14:00</p>
+        <div class="visit-ctas"><a class="btn btn-dark" href="tel:0414173700">041-417-3700 전화하기</a><a class="btn btn-line" href="#consult" data-todo="카카오톡 채널 URL">카카오톡 상담</a></div>
+      </div>
+      <div class="card">
+        <h3>오시는 길</h3>
+        <p class="addr">충남 천안시 서북구 불당25로 176, 4층 412호</p>
+        <div class="dir">
+          <div><b>건물</b><span>천안시청 정면 우리은행 건물 (율곡스퀘어)</span></div>
+          <div><b>주차</b><span>천안시청 정면 우리은행 건물 뒤편에서 노란색 율곡스퀘어 간판을 보고 진입하세요. 건물 모든 층 주차 가능합니다.</span></div>
+          <div><b>편의</b><span>휠체어 출입 가능</span></div>
+        </div>
+        <div class="bld"><img src="img/s13.jpeg" alt="율곡스퀘어 건물 외관"></div>
+        <div class="visit-ctas">
+          <a class="btn btn-line" href="https://map.naver.com/p/entry/place/1885797885" target="_blank">네이버 지도로 보기</a>
+          <a class="btn btn-line" href="https://map.naver.com/p/directions/-/-/-/transit?c=15.00,0,0,0,dh&destination=place,1885797885" target="_blank">길찾기</a>
+        </div>
+      </div>
+    </div>
+    <div class="reviewbox"><p>다녀가신 분들의 이야기와 사진은 네이버 플레이스에서 보실 수 있습니다.</p><a class="btn btn-line" href="https://m.place.naver.com/hospital/1885797885/review/visitor" target="_blank">네이버 플레이스 바로가기</a></div>
+  </div>
+</section>
+
+<!-- CONSULT + FEES (기존 온라인상담 게시판 · 비급여의료수가 공지) -->
+<section class="consult" id="consult">
+  <div class="wrap">
+    <span class="eyebrow"><span class="num">12</span>온라인상담 · 비급여 진료비</span>
+    <h2 class="title">궁금한 점을 남겨 주세요</h2>
+    <p class="lead">찾아 주셔서 감사합니다. 문의 글을 올려 주시면 최대한 빠르게 답변드리겠습니다. 급한 문의는 전화(041-417-3700)가 가장 빠릅니다.</p>
+    <div class="cons-grid">
+      <div>
+        <!-- 아임웹: 아래 목록 자리에 아임웹 게시판(온라인상담) 위젯을 넣으세요 -->
+        <div class="board">
+          <div class="row"><span class="n">공지</span><a href="#fees">비급여의료수가</a><time>2026-06-08</time></div>
+          <div class="row"><span class="n">안내</span><a href="https://parkinst.com/26/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=162994679&t=board" target="_blank">온라인상담 게시판입니다.</a><time>2025-04-30</time></div>
+          <div class="visit-ctas"><a class="btn btn-dark" href="https://parkinst.com/#doz_menu_26" target="_blank">상담 글쓰기</a><a class="btn btn-line" href="tel:0414173700">전화 상담</a></div>
+        </div>
+        <div class="channels">
+          <a href="#consult" data-todo="카카오톡 채널 URL">카카오톡 상담</a>
+          <a href="#consult" data-todo="네이버 예약 URL">네이버 예약</a>
+        </div>
+      </div>
+      <details class="fees" id="fees" open>
+        <summary>비급여 진료비 안내 <span>2026-06-08 게시 기준</span></summary>
+        <p class="fee-intro">의료기관에서 받는 비급여 항목과 금액입니다. 금액은 원 단위이며 자세한 내용은 내원 시 안내해 드립니다.</p>
+        <table class="fee-table">
+          <thead><tr><th>코드</th><th>항목</th><th style="text-align:right">금액(원)</th></tr></thead>
+          <tbody>
+            <tr><td>FY8910000</td><td>자율신경계이상검사(기립성혈압검사)</td><td class="p">20,000</td></tr>
+            <tr><td>FY8920000</td><td>자율신경계이상검사(발살바법)</td><td class="p">20,000</td></tr>
+            <tr><td>FY8940000</td><td>자율신경계이상검사(심박변이도검사)</td><td class="p">10,000</td></tr>
+            <tr><td>FY8950000</td><td>자율신경계이상검사(피부전도반응검사)</td><td class="p">10,000</td></tr>
+            <tr><td>SZ0840000</td><td>체외충격파치료(1일당)<small>치료 타수 2,000타 기준</small></td><td class="p">60,000</td></tr>
+            <tr><td>SZ0840000</td><td>체외충격파치료(1일당)<small>치료 타수 3,000타 기준</small></td><td class="p">80,000</td></tr>
+            <tr><td>SZ0840000</td><td>체외충격파치료(1일당)<small>치료 타수 5,000타 기준</small></td><td class="p">100,000</td></tr>
+            <tr><td>QZ9620000</td><td>경두개 마그네틱 치료(경두개자기자극술)<small>치료 시간 20분 기준</small></td><td class="p">70,000</td></tr>
+            <tr><td>QZ9620000</td><td>경두개 마그네틱 치료(경두개자기자극술)<small>치료 시간 15분 기준</small></td><td class="p">50,000</td></tr>
+            <tr><td>PDZ110102</td><td>진료기록부 등 사본 복사수수료(6매부터, 1매당)</td><td class="p">100</td></tr>
+            <tr><td>PDZ110101</td><td>진료기록부 등 사본 복사수수료(1–5매, 1매당)<small>초진기록지 1매</small></td><td class="p">1,000</td></tr>
+            <tr><td>PDZ110101</td><td>진료기록부 등 사본 복사수수료(1–5매, 1매당)<small>의무기록사본 5매 이내</small></td><td class="p">1,000</td></tr>
+            <tr><td>PDZ090004</td><td>진료확인서(통원)</td><td class="p">3,000</td></tr>
+            <tr><td>PDZ070001</td><td>장애 정도 심사용 진단서(신체적 장애)</td><td class="p">15,000</td></tr>
+            <tr><td>PDZ010001</td><td>산정특례신청서(진단서/건강)</td><td class="p">10,000</td></tr>
+            <tr><td>PDZ010000</td><td>진단서(일반)</td><td class="p">30,000</td></tr>
+            <tr><td>PDZ010000</td><td>산정특례신청서<small>산정특례 신청서 온라인 작성 비용</small></td><td class="p">20,000</td></tr>
+            <tr><td>MY1420000</td><td>증식치료(사지관절부위)</td><td class="p">100,000</td></tr>
+            <tr><td>MZ007000</td><td>신장분사치료(1일당)</td><td class="p">60,000</td></tr>
+            <tr><td>SZ6660000</td><td>자가혈소판풍부혈장안약치료(자가혈청)</td><td class="p">250,000</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap f-grid">
+    <div>
+      <div class="f-logo">팍스신통의원<small>PARK'S NEURO PAIN CLINIC</small></div>
+      <nav class="f-nav"><a href="#top">홈</a><a href="#doctor">의료진소개</a><a href="#visit">진료시간</a><a href="#visit">오시는길</a><a href="#pain">통증 클리닉</a><a href="#rare">희귀난치질환 클리닉</a><a href="#well">웰빙 클리닉</a><a href="#pms">통증관리시스템</a><a href="#consult">온라인상담</a></nav>
+      <div class="sns">
+        <a href="https://blog.naver.com/parksnclinic" target="_blank">블로그</a>
+        <a href="https://www.youtube.com/@%ED%8C%8D%EC%8A%A4%EC%8B%A0%ED%86%B5%EC%9D%98%EC%9B%90" target="_blank">유튜브</a>
+        <a href="https://www.instagram.com/parks_neuropain_clinic" target="_blank">인스타그램</a>
+        <a href="https://www.threads.com/@parks_neuropain_clinic" target="_blank">스레드</a>
+      </div>
+    </div>
+    <div class="f-info">대표자 : 박종규 / 사업자등록번호 : 808-93-01837<br>전화 : 041-417-3700<br>소재지 : 충남 천안시 서북구 불당25로 176, 4층 (천안시청 정면 우리은행 건물)<br>Copyright(C) 2025 팍스신통의원. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-dark" href="tel:0414173700">전화 예약</a>
+  <a class="btn btn-line" href="https://map.naver.com/p/entry/place/1885797885" target="_blank">길찾기</a>
+</div>
+
+</div><!-- /.pk -->
+
+<script>
+(function(){
+  const slides=[...document.querySelectorAll('#stage .slide')], caps=[...document.querySelectorAll('.cap .item')], tabs=[...document.querySelectorAll('#tabs button')];
+  let i=0, timer;
+  function go(n){ i=(n+slides.length)%slides.length; [slides,caps,tabs].forEach(a=>a.forEach((e,k)=>e.classList.toggle('on',k===i))); const bar=tabs[i].querySelector('i'); bar.style.animation='none'; void bar.offsetWidth; bar.style.animation=''; clearTimeout(timer); timer=setTimeout(()=>go(i+1),6500); }
+  tabs.forEach((t,k)=>t.addEventListener('click',()=>go(k)));
+  const q=new URLSearchParams(location.search).get('s'); go(q?+q:0);
+})();
+const hd=document.getElementById('hd');if(hd)addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>10));
+(function(){
+  const k=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Seoul'}));
+  const row=document.querySelector('#hours tr[data-d="'+k.getDay()+'"]'); if(row) row.classList.add('today');
+})();
+</script>
+</body>
+</html>
